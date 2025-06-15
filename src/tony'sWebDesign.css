@@ -1,0 +1,170 @@
+/* Styling for webpage. */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: linear-gradient(to right, blue, blueviolet, purple); /* Cool color background */
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.background-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.pokeball-cursor {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease;
+    transform-origin: center center;
+}
+
+nav {
+    position: sticky;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.sign {
+    flex-basis: 20%;
+}
+
+.sign img {
+    width: 400px;
+    height: 100px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Rest created by Dr. Lembke from MSOE. */
+
+.HolyGrail {
+
+    margin: 0; /* Remove the margin to eliminate scroll bars */
+    height: 100vh;
+
+    display: grid; /* Grid allows for setting the template for the page */
+    grid-template-columns: minmax(12em, 25em) auto;
+    /* Grid columns: the left column should never
+                                            be smaller than 12em
+                                            The rest can grow as large as
+                                            it needs to be */
+    grid-template-rows: auto 1fr auto;
+    /* Grid rows: the top and bottom should grow
+                                            or shrink but be auto sized to only be
+                                            as tall as needed.  The middle row should
+                                            be set to the rest of the available space */
+    grid-gap: 0; /* No gap between items */
+
+    /* Grid template areas define the row and column span for items */
+    grid-template-areas:
+        "header header"
+        "nav content"
+        "footer footer";
+}
+
+.HolyGrail-header {
+    grid-area: header; /* Header item */
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.HolyGrail-footer {
+    grid-area: footer; /* Footer item */
+    margin: auto;
+}
+
+.HolyGrail-content {
+    grid-area: content; /* Main content item */
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.HolyGrail-nav {
+    grid-area: nav; /* Navigation item */
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+/* Underline hover effect */
+.underline-hover {
+    width: 0;
+}
+
+h1:hover .underline-hover,
+p:hover .underline-hover {
+    width: 100%;
+}
+
+/* Home Page Responsive Styles */
+@media (max-width: 768px) {
+    .home-content-wrapper {
+        flex-direction: column;
+        gap: 2rem !important; /* Override inline style */
+    }
+
+    .home-image-column {
+        flex: none !important; /* Override inline style */
+        width: 100%;
+        max-width: 400px; /* Adjust as needed */
+        margin: 0 auto;
+    }
+
+    .home-text-column {
+        flex: none !important; /* Override inline style */
+        text-align: center;
+    }
+
+    .home-text-column h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .home-text-column p {
+        font-size: 1.1rem !important;
+    }
+} 

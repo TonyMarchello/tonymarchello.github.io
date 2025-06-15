@@ -1,0 +1,44 @@
+.site-footer {
+    padding: 2rem;
+    text-align: center;
+    background: #000000;
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    margin-top: auto;
+}
+
+.footer-logo {
+    text-decoration: none;
+    display: inline-block; /* Ensure it wraps the image correctly */
+}
+
+.footer-signature {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.footer-disclaimer {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 1rem;
+    }
+
+    .footer-signature {
+        width: 150px;
+        margin-bottom: 1rem;
+    }
+
+    .footer-disclaimer {
+        font-size: 0.75rem;
+    }
+} 
