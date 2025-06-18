@@ -36,9 +36,9 @@ const Contact = () => {
                     />
                     <div className="profile-info">
                         <h3>GitHub</h3>
-                        <p>Username: AnthonyMarchello</p>
+                        <p>Username: TonyMarchello</p>
                         <a 
-                            href="https://github.com/AnthonyMarchello?tab=repositories" 
+                            href="https://github.com/TonyMarchello"
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="profile-link"
