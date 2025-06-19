@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
-import linkedinIcon from '/imgs/linkedin_icon.png';
-import githubIcon from '/imgs/github_icon.png';
+const linkedinIcon = '/imgs/linkedin_icon.png';
+const githubIcon = '/imgs/github_icon.png';
 
 const Contact = () => {
     return (
