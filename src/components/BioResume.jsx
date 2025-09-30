@@ -82,7 +82,7 @@ const BioResume = () => {
                             <p>Your browser does not support inline PDFs on mobile devices. Please download the PDF to
                                 view it.</p>
                             <a
-                                href="public/docs/Anthony William Marchello Career Fair Resume 2025-2026.pdf"
+                                href="/docs/Anthony William Marchello Career Fair Resume 2025-2026.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="pdf-download-button"
@@ -92,7 +92,7 @@ const BioResume = () => {
                         </div>
                     ) : (
                         <object
-                            data="public/docs/Anthony William Marchello Career Fair Resume 2025-2026.pdf"
+                            data="/docs/Anthony William Marchello Career Fair Resume 2025-2026.pdf"
                             type="application/pdf"
                             className="pdf-content"
                         >
