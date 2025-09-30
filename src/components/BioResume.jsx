@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import './BioResume.css';
 
 const BioResume = () => {
@@ -23,39 +23,51 @@ const BioResume = () => {
             <section className="bio-section">
                 <h1>Bio</h1>
                 <div className="bio-content">
-                    <img 
-                        src="/imgs/RiverBack3.jpg" 
-                        alt="Tony at the river" 
+                    <img
+                        src="/imgs/RiverBack3.jpg"
+                        alt="Tony at the river"
                         className="bio-image"
                     />
                     <div className="bio-text">
                         <p>
-                            I'm Anthony Marchello, a Software Engineering student at Milwaukee School of Engineering (MSOE),
-                            pursuing a minor in Data Science. My academic focus combines software design, cybersecurity,
-                            and data science to build robust and thoughtful applications.
+                            I'm Anthony Marchello, a Software Engineering student at the Milwaukee School of Engineering
+                            (MSOE),
+                            pursuing a minor in Data Science. My academic focus blends software design, data-driven
+                            problem solving,
+                            and cybersecurity to build applications that are both reliable and impactful.
                         </p>
                         <p>
-                            Throughout the academic year, I've been working with Scot Forge on a year-long group project
-                            developing a web application, applying tools like Python, Poetry, and React JS to solve real-world
-                            problems while improving my skills in debugging, team collaboration, and technical debt reduction.
+                            My project experience spans embedded systems, front-end and back-end development, DevOps,
+                            and machine learning.
+                            This includes a year-long collaboration with Scot Forge to develop a web application using
+                            Python, Docker, and React,
+                            as well as my current Senior Design project: building a collaborative digital audio
+                            workstation (DAW) in C++ with the JUCE
+                            framework, integrating technologies like Nvidia’s Fugatto model and Dolby Atmos.
                         </p>
                         <p>
-                            I'm experienced in full-stack development with technologies including Java, C++, MongoDB, SQL,
-                            TensorFlow, and AWS. My projects span from deep learning character recognition to a Minesweeper
-                            game clone, and a Culver's menu filtering app built with React JS and Bootstrap.
+                            I'm skilled in full-stack development and comfortable across a wide range of technologies,
+                            including C, C++, Java,
+                            Python, JavaScript, SQL, MongoDB, TensorFlow, and AWS. My personal projects range from deep
+                            learning models for Japanese
+                            character recognition to creative builds like a ROM hack of Pokémon Sapphire, a Minesweeper
+                            clone, and a Culver’s
+                            menu filter web app.
                         </p>
                         <p>
-                            Outside of the classroom, I'm active in the MSOE community through Concert Band, the Video Game
-                            Development Club, and Circle K. I also enjoy giving back through long-term volunteer roles at
-                            St. Matthew's Church Choir and the Salvation Army.
+                            Outside the classroom, I’m active in the MSOE community through Concert Band, the Video Game
+                            Development Club, Circle K,
+                            and SAGA. I’ve also been committed to long-term volunteer roles with St. Matthew’s Church
+                            Choir and the Salvation Army.
                         </p>
                         <p>
-                            When I'm not coding or studying, I enjoy reading, hiking, fishing, gaming with friends, and
-                            diving into new ideas and creative projects. My broad interests help me stay curious,
-                            adaptable, and eager to grow—both personally and professionally.
+                            When I’m not coding or studying, you’ll likely find me reading, fishing, gaming with
+                            friends, meditating,
+                            or following open-wheel racing. My broad set of interests keeps me curious, adaptable, and
+                            motivated to grow—
+                            both personally and professionally.
                         </p>
                     </div>
-
                 </div>
             </section>
 
@@ -67,9 +79,10 @@ const BioResume = () => {
                 <div className="pdf-viewer">
                     {isMobile ? (
                         <div className="pdf-mobile-fallback">
-                            <p>Your browser does not support inline PDFs on mobile devices. Please download the PDF to view it.</p>
-                            <a 
-                                href="/docs/AnthonyWilliamMarchelloResume2024-2025.pdf"
+                            <p>Your browser does not support inline PDFs on mobile devices. Please download the PDF to
+                                view it.</p>
+                            <a
+                                href="public/docs/Anthony William Marchello Career Fair Resume 2025-2026.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="pdf-download-button"
@@ -79,7 +92,7 @@ const BioResume = () => {
                         </div>
                     ) : (
                         <object
-                            data="/docs/AnthonyWilliamMarchelloResume2024-2025.pdf"
+                            data="public/docs/Anthony William Marchello Career Fair Resume 2025-2026.pdf"
                             type="application/pdf"
                             className="pdf-content"
                         >
