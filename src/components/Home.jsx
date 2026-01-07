@@ -67,7 +67,7 @@ const Home = () => {
                         display: 'inline-block',
                         paddingBottom: '0.5rem'
                     }}>
-                        I'm a software engineer with data science experience. Feel free to explore my site!
+                        I’m a software engineer with data science experience. Feel free to explore my site!
                         <span style={{
                             content: '""',
                             position: 'absolute',
