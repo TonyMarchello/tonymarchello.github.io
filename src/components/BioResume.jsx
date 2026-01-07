@@ -76,6 +76,37 @@ const BioResume = () => {
                     </div>
                 </div>
             </section>
+
+            <div className="section-divider"></div>
+
+            {/* Resume Section */}
+            <section className="resume-section">
+                <h1>Resume</h1>
+                <div className="pdf-viewer">
+                    {isMobile ? (
+                        <div className="pdf-mobile-fallback">
+                            <p>Your browser does not support inline PDFs on mobile devices. Please download the PDF to
+                                view it.</p>
+                            <a
+                                href="/docs/Anthony William Marchello Updated Resume December 2025-2026.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="pdf-download-button"
+                            >
+                                Download Resume
+                            </a>
+                        </div>
+                    ) : (
+                        <object
+                            data="/docs/Anthony William Marchello Updated Resume December 2025-2026.pdf"
+                            type="application/pdf"
+                            className="pdf-content"
+                        >
+                            <p>Your browser does not support PDFs. Please download the PDF to view it.</p>
+                        </object>
+                    )}
+                </div>
+            </section>
         </div>
     );
 };
