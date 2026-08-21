@@ -7,6 +7,8 @@ import Bio from './components/BioResume';
 import Contact from './components/Contact';
 import Mudkip from './components/Mudkip';
 import Home from './components/Home';
+import BlogLanding from './components/BlogLanding';
+import BlogPost from './components/BlogPost';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -18,6 +20,8 @@ const App = () => {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/bio" element={<Bio />} />
+                        <Route path="/blog" element={<BlogLanding />} />
+                        <Route path="/blog/:slug" element={<BlogPost />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/mudkip" element={<Mudkip />} />
                     </Routes>

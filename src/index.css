@@ -130,6 +130,10 @@ body {
   width: 100%;
 }
 
+.nav-links a.active::after {
+  width: 100%;
+}
+
 .home-icon {
   display: flex;
   align-items: center;
@@ -153,6 +157,14 @@ body {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: inherit;
+}
+
+.menu-toggle:hover {
+    background: transparent;
 }
 
 .hamburger {
@@ -271,4 +283,4 @@ button {
 
 button:hover {
   background-color: #ccc;
-} 
+}
