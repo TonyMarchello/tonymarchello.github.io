@@ -70,7 +70,7 @@ const BlogLanding = () => {
                     </div>
                 ) : (
                     <div className="blog-empty-state">
-                        <p>Add another entry to <code>src/data/blogPosts.js</code> to populate the full post list.</p>
+                        <p>More posts are on the way.</p>
                     </div>
                 )}
             </section>
