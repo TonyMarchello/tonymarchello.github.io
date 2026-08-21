@@ -263,7 +263,7 @@
     padding: 1rem 1.25rem;
     border-radius: 18px;
     background: rgba(0, 0, 0, 0.18);
-    border: 1px dashed rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     color: rgba(255, 255, 255, 0.8);
 }
 
